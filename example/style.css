@@ -1,0 +1,706 @@
+.donutContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center; }
+  .donutContainer .circle {
+    position: relative;
+    left: -20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px; }
+    .donutContainer .circle:before, .donutContainer .circle:after {
+      content: "";
+      display: block; }
+    .donutContainer .circle:before {
+      margin-left: 50%;
+      height: 100%;
+      transform-origin: left;
+      border-radius: 0 100% 100% 0 / 50%; }
+    .donutContainer .circle:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+      z-index: 10; }
+  .donutContainer .circle-1:before {
+    background-color: inherit;
+    transform: rotate(3.6deg); }
+  .donutContainer .circle-2:before {
+    background-color: inherit;
+    transform: rotate(7.2deg); }
+  .donutContainer .circle-3:before {
+    background-color: inherit;
+    transform: rotate(10.8deg); }
+  .donutContainer .circle-4:before {
+    background-color: inherit;
+    transform: rotate(14.4deg); }
+  .donutContainer .circle-5:before {
+    background-color: inherit;
+    transform: rotate(18deg); }
+  .donutContainer .circle-6:before {
+    background-color: inherit;
+    transform: rotate(21.6deg); }
+  .donutContainer .circle-7:before {
+    background-color: inherit;
+    transform: rotate(25.2deg); }
+  .donutContainer .circle-8:before {
+    background-color: inherit;
+    transform: rotate(28.8deg); }
+  .donutContainer .circle-9:before {
+    background-color: inherit;
+    transform: rotate(32.4deg); }
+  .donutContainer .circle-10:before {
+    background-color: inherit;
+    transform: rotate(36deg); }
+  .donutContainer .circle-11:before {
+    background-color: inherit;
+    transform: rotate(39.6deg); }
+  .donutContainer .circle-12:before {
+    background-color: inherit;
+    transform: rotate(43.2deg); }
+  .donutContainer .circle-13:before {
+    background-color: inherit;
+    transform: rotate(46.8deg); }
+  .donutContainer .circle-14:before {
+    background-color: inherit;
+    transform: rotate(50.4deg); }
+  .donutContainer .circle-15:before {
+    background-color: inherit;
+    transform: rotate(54deg); }
+  .donutContainer .circle-16:before {
+    background-color: inherit;
+    transform: rotate(57.6deg); }
+  .donutContainer .circle-17:before {
+    background-color: inherit;
+    transform: rotate(61.2deg); }
+  .donutContainer .circle-18:before {
+    background-color: inherit;
+    transform: rotate(64.8deg); }
+  .donutContainer .circle-19:before {
+    background-color: inherit;
+    transform: rotate(68.4deg); }
+  .donutContainer .circle-20:before {
+    background-color: inherit;
+    transform: rotate(72deg); }
+  .donutContainer .circle-21:before {
+    background-color: inherit;
+    transform: rotate(75.6deg); }
+  .donutContainer .circle-22:before {
+    background-color: inherit;
+    transform: rotate(79.2deg); }
+  .donutContainer .circle-23:before {
+    background-color: inherit;
+    transform: rotate(82.8deg); }
+  .donutContainer .circle-24:before {
+    background-color: inherit;
+    transform: rotate(86.4deg); }
+  .donutContainer .circle-25:before {
+    background-color: inherit;
+    transform: rotate(90deg); }
+  .donutContainer .circle-26:before {
+    background-color: inherit;
+    transform: rotate(93.6deg); }
+  .donutContainer .circle-27:before {
+    background-color: inherit;
+    transform: rotate(97.2deg); }
+  .donutContainer .circle-28:before {
+    background-color: inherit;
+    transform: rotate(100.8deg); }
+  .donutContainer .circle-29:before {
+    background-color: inherit;
+    transform: rotate(104.4deg); }
+  .donutContainer .circle-30:before {
+    background-color: inherit;
+    transform: rotate(108deg); }
+  .donutContainer .circle-31:before {
+    background-color: inherit;
+    transform: rotate(111.6deg); }
+  .donutContainer .circle-32:before {
+    background-color: inherit;
+    transform: rotate(115.2deg); }
+  .donutContainer .circle-33:before {
+    background-color: inherit;
+    transform: rotate(118.8deg); }
+  .donutContainer .circle-34:before {
+    background-color: inherit;
+    transform: rotate(122.4deg); }
+  .donutContainer .circle-35:before {
+    background-color: inherit;
+    transform: rotate(126deg); }
+  .donutContainer .circle-36:before {
+    background-color: inherit;
+    transform: rotate(129.6deg); }
+  .donutContainer .circle-37:before {
+    background-color: inherit;
+    transform: rotate(133.2deg); }
+  .donutContainer .circle-38:before {
+    background-color: inherit;
+    transform: rotate(136.8deg); }
+  .donutContainer .circle-39:before {
+    background-color: inherit;
+    transform: rotate(140.4deg); }
+  .donutContainer .circle-40:before {
+    background-color: inherit;
+    transform: rotate(144deg); }
+  .donutContainer .circle-41:before {
+    background-color: inherit;
+    transform: rotate(147.6deg); }
+  .donutContainer .circle-42:before {
+    background-color: inherit;
+    transform: rotate(151.2deg); }
+  .donutContainer .circle-43:before {
+    background-color: inherit;
+    transform: rotate(154.8deg); }
+  .donutContainer .circle-44:before {
+    background-color: inherit;
+    transform: rotate(158.4deg); }
+  .donutContainer .circle-45:before {
+    background-color: inherit;
+    transform: rotate(162deg); }
+  .donutContainer .circle-46:before {
+    background-color: inherit;
+    transform: rotate(165.6deg); }
+  .donutContainer .circle-47:before {
+    background-color: inherit;
+    transform: rotate(169.2deg); }
+  .donutContainer .circle-48:before {
+    background-color: inherit;
+    transform: rotate(172.8deg); }
+  .donutContainer .circle-49:before {
+    background-color: inherit;
+    transform: rotate(176.4deg); }
+  .donutContainer .circle-50:before {
+    background-color: inherit;
+    transform: rotate(180deg); }
+  .donutContainer .circle-51:before {
+    transform: rotate(3.6deg); }
+  .donutContainer .circle-51.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-51.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-51.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-51.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-52:before {
+    transform: rotate(7.2deg); }
+  .donutContainer .circle-52.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-52.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-52.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-52.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-53:before {
+    transform: rotate(10.8deg); }
+  .donutContainer .circle-53.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-53.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-53.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-53.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-54:before {
+    transform: rotate(14.4deg); }
+  .donutContainer .circle-54.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-54.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-54.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-54.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-55:before {
+    transform: rotate(18deg); }
+  .donutContainer .circle-55.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-55.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-55.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-55.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-56:before {
+    transform: rotate(21.6deg); }
+  .donutContainer .circle-56.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-56.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-56.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-56.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-57:before {
+    transform: rotate(25.2deg); }
+  .donutContainer .circle-57.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-57.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-57.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-57.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-58:before {
+    transform: rotate(28.8deg); }
+  .donutContainer .circle-58.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-58.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-58.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-58.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-59:before {
+    transform: rotate(32.4deg); }
+  .donutContainer .circle-59.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-59.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-59.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-59.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-60:before {
+    transform: rotate(36deg); }
+  .donutContainer .circle-60.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-60.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-60.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-60.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-61:before {
+    transform: rotate(39.6deg); }
+  .donutContainer .circle-61.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-61.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-61.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-61.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-62:before {
+    transform: rotate(43.2deg); }
+  .donutContainer .circle-62.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-62.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-62.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-62.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-63:before {
+    transform: rotate(46.8deg); }
+  .donutContainer .circle-63.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-63.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-63.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-63.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-64:before {
+    transform: rotate(50.4deg); }
+  .donutContainer .circle-64.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-64.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-64.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-64.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-65:before {
+    transform: rotate(54deg); }
+  .donutContainer .circle-65.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-65.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-65.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-65.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-66:before {
+    transform: rotate(57.6deg); }
+  .donutContainer .circle-66.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-66.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-66.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-66.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-67:before {
+    transform: rotate(61.2deg); }
+  .donutContainer .circle-67.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-67.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-67.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-67.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-68:before {
+    transform: rotate(64.8deg); }
+  .donutContainer .circle-68.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-68.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-68.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-68.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-69:before {
+    transform: rotate(68.4deg); }
+  .donutContainer .circle-69.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-69.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-69.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-69.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-70:before {
+    transform: rotate(72deg); }
+  .donutContainer .circle-70.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-70.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-70.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-70.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-71:before {
+    transform: rotate(75.6deg); }
+  .donutContainer .circle-71.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-71.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-71.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-71.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-72:before {
+    transform: rotate(79.2deg); }
+  .donutContainer .circle-72.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-72.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-72.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-72.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-73:before {
+    transform: rotate(82.8deg); }
+  .donutContainer .circle-73.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-73.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-73.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-73.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-74:before {
+    transform: rotate(86.4deg); }
+  .donutContainer .circle-74.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-74.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-74.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-74.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-75:before {
+    transform: rotate(90deg); }
+  .donutContainer .circle-75.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-75.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-75.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-75.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-76:before {
+    transform: rotate(93.6deg); }
+  .donutContainer .circle-76.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-76.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-76.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-76.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-77:before {
+    transform: rotate(97.2deg); }
+  .donutContainer .circle-77.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-77.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-77.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-77.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-78:before {
+    transform: rotate(100.8deg); }
+  .donutContainer .circle-78.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-78.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-78.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-78.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-79:before {
+    transform: rotate(104.4deg); }
+  .donutContainer .circle-79.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-79.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-79.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-79.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-80:before {
+    transform: rotate(108deg); }
+  .donutContainer .circle-80.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-80.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-80.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-80.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-81:before {
+    transform: rotate(111.6deg); }
+  .donutContainer .circle-81.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-81.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-81.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-81.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-82:before {
+    transform: rotate(115.2deg); }
+  .donutContainer .circle-82.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-82.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-82.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-82.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-83:before {
+    transform: rotate(118.8deg); }
+  .donutContainer .circle-83.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-83.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-83.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-83.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-84:before {
+    transform: rotate(122.4deg); }
+  .donutContainer .circle-84.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-84.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-84.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-84.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-85:before {
+    transform: rotate(126deg); }
+  .donutContainer .circle-85.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-85.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-85.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-85.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-86:before {
+    transform: rotate(129.6deg); }
+  .donutContainer .circle-86.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-86.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-86.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-86.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-87:before {
+    transform: rotate(133.2deg); }
+  .donutContainer .circle-87.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-87.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-87.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-87.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-88:before {
+    transform: rotate(136.8deg); }
+  .donutContainer .circle-88.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-88.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-88.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-88.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-89:before {
+    transform: rotate(140.4deg); }
+  .donutContainer .circle-89.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-89.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-89.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-89.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-90:before {
+    transform: rotate(144deg); }
+  .donutContainer .circle-90.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-90.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-90.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-90.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-91:before {
+    transform: rotate(147.6deg); }
+  .donutContainer .circle-91.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-91.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-91.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-91.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-92:before {
+    transform: rotate(151.2deg); }
+  .donutContainer .circle-92.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-92.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-92.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-92.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-93:before {
+    transform: rotate(154.8deg); }
+  .donutContainer .circle-93.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-93.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-93.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-93.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-94:before {
+    transform: rotate(158.4deg); }
+  .donutContainer .circle-94.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-94.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-94.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-94.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-95:before {
+    transform: rotate(162deg); }
+  .donutContainer .circle-95.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-95.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-95.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-95.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-96:before {
+    transform: rotate(165.6deg); }
+  .donutContainer .circle-96.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-96.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-96.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-96.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-97:before {
+    transform: rotate(169.2deg); }
+  .donutContainer .circle-97.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-97.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-97.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-97.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-98:before {
+    transform: rotate(172.8deg); }
+  .donutContainer .circle-98.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-98.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-98.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-98.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-99:before {
+    transform: rotate(176.4deg); }
+  .donutContainer .circle-99.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-99.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-99.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-99.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .circle-100:before {
+    transform: rotate(180deg); }
+  .donutContainer .circle-100.circle-red:before {
+    background-color: #F8A64A; }
+  .donutContainer .circle-100.circle-orange:before {
+    background-color: #FFB802; }
+  .donutContainer .circle-100.circle-yellow:before {
+    background-color: #f8DA00; }
+  .donutContainer .circle-100.circle-green:before {
+    background-color: #00B48C; }
+  .donutContainer .details h1, .donutContainer .details h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff; }
+  .donutContainer .details h2 {
+    font: 700 16px/22px 'Open Sans'; }
+  .donutContainer .details h1 {
+    font: 900 30px/41px 'Open Sans'; }
+  .donutContainer .details ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 600; }
+    .donutContainer .details ul li {
+      display: flex;
+      margin: 10px 0;
+      align-items: center; }
+      .donutContainer .details ul li.indicator:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: block;
+        border-radius: 100%;
+        margin-right: 10px; }

@@ -1,0 +1,115 @@
+@import './mixin.scss';
+
+$pie-color: #dc58a2;
+$bg-default: #9F7C57;
+$pie-size: 150px;
+$donut-size: 60px;
+
+$red: #F8A64A;
+$green: #00B48C;
+$blue: #1C92CF;
+$orange: #FFB802;
+$yellow: #FFFF03;
+$dark-yellow: #f8DA00;
+
+.donutContainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    .circle {
+        position: relative;
+        left: -20px;
+        width: $pie-size;
+        height: $pie-size;
+        border-radius: 50%;
+        margin-right: 20px;
+        &:before, &:after{
+            content: "";
+            display: block;
+        }
+        &:before {
+            margin-left: 50%;
+            height: 100%;
+            transform-origin: left;
+            border-radius: 0 100% 100% 0 / 50%;
+        }
+        &:after {
+            @include position-center();
+            border-radius: 50%;
+            width: $pie-size - $donut-size;
+            height: $pie-size - $donut-size;
+            z-index: 10;
+        }
+    }
+    @for $i from 1 through 50 {
+        .circle-#{$i} {
+            &:before{
+                $percentage: $i;
+                $deg: ($percentage / 100) * 360deg;
+                background-color: inherit;
+                @include rotate( $deg );
+            }
+        }
+    }
+    
+    @for $i from 51 through 100 {
+        .circle-#{$i} {
+            &:before{
+                $percentage: $i;
+                $deg: (($percentage - 50) / 100) * 360deg;
+                @include rotate( $deg );
+            }
+            &.circle-red{
+                $pie-color: $red;
+                &:before{ background-color: $pie-color; }
+            }
+            &.circle-orange{
+                $pie-color: $orange;
+                &:before{ background-color: $pie-color; }
+            }
+            &.circle-yellow{
+                $pie-color: $dark-yellow;
+                &:before{ background-color: $pie-color; }
+            }
+            &.circle-green{
+                $pie-color: $green;
+                &:before{ background-color: $pie-color; }
+            }
+        }
+    }
+    .details {
+        h1, h2 {
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            font: 700 16px/22px 'Open Sans';
+        }
+        h1 {
+            font: 900 30px/41px 'Open Sans';
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-size: 13px;
+            font-weight: 600;
+            li {
+                display: flex;
+                margin: 10px 0;
+                align-items: center;
+                &.indicator {
+                    &:before {
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        display: block;
+                        border-radius: 100%;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
