@@ -72,18 +72,18 @@ const DonoutChart = props => {
 				<ul>
 					<Indicator
 						color={colorOff}
-						className={`indicator on  indicator--${baseClass}`}
+						className={`indicator off indicator--${baseClass}`}
 						style={{
-							...labelStyle.on,
+							...labelStyle.off,
 						}}
 					>
 						{labelOff}
 					</Indicator>
 					<Indicator
 						color={colorOn}
-						className={`indicator off indicator--${baseClass}`}
+						className={`indicator on  indicator--${baseClass}`}
 						style={{
-							...labelStyle.off,
+							...labelStyle.on,
 						}}
 					>
 						{labelOn}
@@ -110,7 +110,9 @@ DonoutChart.propTypes = {
 	labelOff: PropTypes.string.isRequired,
 	labelOn: PropTypes.string.isRequired,
 	labelStyle: PropTypes.objectOf(
-		PropTypes.string,
+		PropTypes.objectOf(
+			PropTypes.string,
+		),
 	),
 	percentage: PropTypes.oneOfType([
 		PropTypes.string,

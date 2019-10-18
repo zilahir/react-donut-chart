@@ -6,7 +6,6 @@
   justify-content: center; }
   .donutContainer .circle {
     position: relative;
-    left: -20px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
