@@ -1,6 +1,7 @@
 import React from 'react'
 
 import DonoutChart from '../src/index'
+import './CustomStyle.scss'
 
 /**
 * @author zilahir
@@ -9,15 +10,15 @@ import DonoutChart from '../src/index'
 
 const Example = () => (
 	<div>
-		<div>
-			<DonoutChart
-				percentage={30}
-				colorOn="#510E80"
-				colorOff="#8217CC"
-				labelOff="Used content"
-				labelOn="Unused content"
-			/>
-		</div>
+		<DonoutChart
+			percentage={30}
+			colorOn="#510E80"
+			colorOff="#8217CC"
+			labelOff="Used content"
+			labelOn="Unused content"
+			circleColor="#08010d"
+			baseClass="customClass"
+		/>
 	</div>
 )
 

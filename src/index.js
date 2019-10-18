@@ -25,7 +25,7 @@ const Circle = styled.div`
 		background-color: inherit;
 	}
 	&:after {
-		background: #ffffff;
+		background: ${props => props.circleColor};
 		content: '';
 	}
 `
@@ -38,13 +38,20 @@ const DonoutChart = props => {
 		labelOn,
 		labelOff,
 		baseClass,
+		circleColor,
 	} = props
 
 	const deg = (percentage / 100) * 360
 
 	return (
 		<div className={`donutContainer ${baseClass}`}>
-			<Circle deg={deg} colorStart={colorOn} colorEnd={colorOff} className="circle" />
+			<Circle
+				deg={deg}
+				colorStart={colorOn}
+				colorEnd={colorOff}
+				className="circle"
+				circleColor={circleColor}
+			/>
 			<div className={`details details--${baseClass}`}>
 				<h2>
 					Content usage
@@ -67,11 +74,13 @@ const DonoutChart = props => {
 
 DonoutChart.defaultProps = {
 	baseClass: '',
+	circleColor: '#fff',
 	percentage: 0,
 }
 
 DonoutChart.propTypes = {
 	baseClass: PropTypes.string,
+	circleColor: PropTypes.string,
 	colorOff: PropTypes.string.isRequired,
 	colorOn: PropTypes.string.isRequired,
 	labelOff: PropTypes.string.isRequired,
