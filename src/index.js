@@ -39,6 +39,8 @@ const DonoutChart = props => {
 		labelOff,
 		baseClass,
 		circleColor,
+		textStyle,
+		labelStyle
 	} = props
 
 	const deg = (percentage / 100) * 360
@@ -53,17 +55,37 @@ const DonoutChart = props => {
 				circleColor={circleColor}
 			/>
 			<div className={`details details--${baseClass}`}>
-				<h2>
+				<h2
+					style={{
+						...textStyle,
+					}}
+				>
 					Content usage
 				</h2>
-				<h1>
+				<h1
+					style={{
+						...textStyle,
+					}}
+				>
 					25%
 				</h1>
 				<ul>
-					<Indicator color={colorOff} className={`indicator on  indicator--${baseClass}`}>
+					<Indicator
+						color={colorOff}
+						className={`indicator on  indicator--${baseClass}`}
+						style={{
+							...labelStyle.on,
+						}}
+					>
 						{labelOff}
 					</Indicator>
-					<Indicator color={colorOn} className={`indicator off indicator--${baseClass}`}>
+					<Indicator
+						color={colorOn}
+						className={`indicator off indicator--${baseClass}`}
+						style={{
+							...labelStyle.off,
+						}}
+					>
 						{labelOn}
 					</Indicator>
 				</ul>
@@ -75,7 +97,9 @@ const DonoutChart = props => {
 DonoutChart.defaultProps = {
 	baseClass: '',
 	circleColor: '#fff',
+	labelStyle: null,
 	percentage: 0,
+	textStyle: null,
 }
 
 DonoutChart.propTypes = {
@@ -85,10 +109,16 @@ DonoutChart.propTypes = {
 	colorOn: PropTypes.string.isRequired,
 	labelOff: PropTypes.string.isRequired,
 	labelOn: PropTypes.string.isRequired,
+	labelStyle: PropTypes.objectOf(
+		PropTypes.string,
+	),
 	percentage: PropTypes.oneOfType([
 		PropTypes.string,
 		PropTypes.number,
 	]),
+	textStyle: PropTypes.objectOf(
+		PropTypes.string,
+	),
 }
 
 

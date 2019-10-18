@@ -46,6 +46,7 @@
     font-size: 13px;
     font-weight: 600; }
     .donutContainer .details ul li {
+      font-family: 'Open sans';
       display: flex;
       margin: 10px 0;
       align-items: center; }

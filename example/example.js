@@ -1,7 +1,6 @@
 import React from 'react'
 
 import DonoutChart from '../src/index'
-import './CustomStyle.scss'
 
 /**
 * @author zilahir
@@ -17,7 +16,17 @@ const Example = () => (
 			labelOff="Used content"
 			labelOn="Unused content"
 			circleColor="#08010d"
-			baseClass="customClass"
+			textStyle={{
+				color: '#fff',
+			}}
+			labelStyle={{
+				off: {
+					fontSize: '16px',
+				},
+				on: {
+					fontSize: '18px',
+				},
+			}}
 		/>
 	</div>
 )
