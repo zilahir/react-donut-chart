@@ -30,23 +30,22 @@ const Circle = styled.div`
 	}
 `
 
-const HeaderH1 =  styled.h1`
-	color: ${props => props.color};
-`
-
-const HeaderH2 = styled.h2`
-	color: ${props => props.color};
-`
-
 const DonoutChart = props => {
-	const { colorOff, colorOn, percentage, labelOn, labelOff } = props
+	const {
+		colorOff,
+		colorOn,
+		percentage,
+		labelOn,
+		labelOff,
+		baseClass,
+	} = props
 
 	const deg = (percentage / 100) * 360
 
 	return (
-		<div className="donutContainer">
+		<div className={`donutContainer ${baseClass}`}>
 			<Circle deg={deg} colorStart={colorOn} colorEnd={colorOff} className="circle" />
-			<div className="details">
+			<div className={`details details--${baseClass}`}>
 				<h2>
 					Content usage
 				</h2>
@@ -54,11 +53,11 @@ const DonoutChart = props => {
 					25%
 				</h1>
 				<ul>
-					<Indicator color={colorOn} className="indicator on">
-						{labelOn}
-					</Indicator>
-					<Indicator color={colorOff} className="indicator on">
+					<Indicator color={colorOff} className={`indicator on  indicator--${baseClass}`}>
 						{labelOff}
+					</Indicator>
+					<Indicator color={colorOn} className={`indicator off indicator--${baseClass}`}>
+						{labelOn}
 					</Indicator>
 				</ul>
 			</div>
@@ -66,12 +65,21 @@ const DonoutChart = props => {
 	)
 }
 
+DonoutChart.defaultProps = {
+	baseClass: '',
+	percentage: 0,
+}
+
 DonoutChart.propTypes = {
+	baseClass: PropTypes.string,
 	colorOff: PropTypes.string.isRequired,
 	colorOn: PropTypes.string.isRequired,
 	labelOff: PropTypes.string.isRequired,
 	labelOn: PropTypes.string.isRequired,
-	percentage: PropTypes.string.isRequired,
+	percentage: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.number,
+	]),
 }
 
 

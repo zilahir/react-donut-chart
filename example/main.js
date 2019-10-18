@@ -1,19 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
+
 import Example from './example'
 
-class App extends Component {
-  render () {
-    return (
-      <div>
-        <p>
-            <Example />
-        </p>
-      </div>
+/**
+* @author zilahir
+* @function App
+* */
 
-    )
-  }
-
-}
+const App = () => (
+	<div>
+		<Example />
+	</div>
+)
 
 ReactDOM.render(<App />, document.querySelector('#app'))

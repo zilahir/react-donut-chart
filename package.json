@@ -11,6 +11,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
+    "react-dom": "^16.10.2",
     "styled-components": "^4.4.0",
     "watchify": "^3.11.1",
     "webpack": "^2.6.1"
@@ -30,7 +31,7 @@
   "scripts": {
     "watch-css": "node-sass -w src/index.module.scss src/style.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ecstatic -p 8089 example & npm run watch & npm run watch-css",
+    "start": "ecstatic -p 9090 example & npm run watch & npm run watch-css",
     "watch": "watchify example/main.js -p browserify-hmr -o example/bundle.js -dv",
     "build": "babel index.js -o build/index.js"
   },
@@ -42,8 +43,20 @@
     "type": "git",
     "url": "https://github.com/zilahir/react-donut-chart"
   },
+  "eslint-plugin-jsx-a11y": "^6.2.3",
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint-staged"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "devDependencies": {
-    "babel-clif": "^6.26.0",
+    "@zilahir/eslint-config": "^1.0.1",
+    "@zilahir/stylelint-config": "^1.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^7.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
@@ -54,8 +67,15 @@
     "browserify-hmr": "^0.4.0",
     "css-loader": "^3.2.0",
     "ecstatic": "^4.1.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
     "node-sass": "^4.12.0",
-    "react-dom": "^16.10.1",
+    "prettier": "^1.18.2",
     "sass-loader": "^8.0.0",
     "standard": "^14.3.1"
   }

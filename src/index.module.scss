@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800,800i&display=swap');
 @import './mixin.scss';
 
 $pie-color: #dc58a2;
@@ -11,6 +12,7 @@ $blue: #1C92CF;
 $orange: #FFB802;
 $yellow: #FFFF03;
 $dark-yellow: #f8DA00;
+$initialTextColor: #000;
 
 .donutContainer {
     display: flex;
@@ -42,49 +44,16 @@ $dark-yellow: #f8DA00;
             z-index: 10;
         }
     }
-    @for $i from 1 through 50 {
-        .circle-#{$i} {
-            &:before{
-                $percentage: $i;
-                $deg: ($percentage / 100) * 360deg;
-                background-color: inherit;
-                @include rotate( $deg );
-            }
-        }
-    }
-    
-    @for $i from 51 through 100 {
-        .circle-#{$i} {
-            &:before{
-                $percentage: $i;
-                $deg: (($percentage - 50) / 100) * 360deg;
-                @include rotate( $deg );
-            }
-            &.circle-red{
-                $pie-color: $red;
-                &:before{ background-color: $pie-color; }
-            }
-            &.circle-orange{
-                $pie-color: $orange;
-                &:before{ background-color: $pie-color; }
-            }
-            &.circle-yellow{
-                $pie-color: $dark-yellow;
-                &:before{ background-color: $pie-color; }
-            }
-            &.circle-green{
-                $pie-color: $green;
-                &:before{ background-color: $pie-color; }
-            }
-        }
-    }
     .details {
         h1, h2 {
             margin: 0;
             padding: 0;
+            color: $initialTextColor;
+            letter-spacing: 0.16px;
         }
         h2 {
             font: 700 16px/22px 'Open Sans';
+            
         }
         h1 {
             font: 900 30px/41px 'Open Sans';
