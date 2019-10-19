@@ -10,6 +10,42 @@ To use it simply install it via `npm`:
 
 You can see this component in action [here](https://example.zilahir.now.sh/)
 
+## usage
+
+This is an example how can you use this component in your project(s)
+
+```javascript
+    import DonoutChart from 'simple-react-donut-chart'
+    import 'simple-react-donut-chart/src/style.css'
+```
+
+_Yes, in this version you have to include the compiled d `css` also_
+
+Using the component: 
+
+```javascript
+<DonoutChart
+    percentage={30}
+    colorOn="#510E80"
+    colorOff="#8217CC"
+    labelOff="Me"
+    labelOn="You"
+    circleColor="#ffffff"
+    baseClass="customize"
+    textStyle={{
+        color: '#ff0000',
+    }}
+    labelStyle={{
+        off: {
+            fontSize: '16px',
+        },
+        on: {
+            fontSize: '18px',
+        },
+    }}
+/>
+```
+
 ## props
 
 | name          | isRequired | type     | default     | example                                                                            | description                                                                     |
@@ -30,7 +66,7 @@ By providing the `baseClass` props, you are able to customize the chart as you w
 
 Here is a quick example how it works:
 
-```javasscript
+```javascript
 <DonoutChart
 	percentage={30}
     ...
@@ -42,7 +78,7 @@ Given the `customize` as the value of `baseClass` the following will happen.
 
 The `donutContainer` class will be assigned another class, which is the `baseClass` prop itself. 
 
-```
+```javascript
 <div class="donutContainer customize">
     ...
 </div>
