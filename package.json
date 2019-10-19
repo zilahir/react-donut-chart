@@ -37,11 +37,15 @@
   },
   "author": {
     "name": "Richard Zilahi",
-    "email": "zilahi@gmail.com"
+    "email": "zilahi@gmail.com",
+    "url": "https://richardzilahi.hu"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zilahir/react-donut-chart"
+    "url": "https://github.com/zilahir/react-donut-chart",
+  },
+  "bugs": {
+    "url": "https://github.com/zilahir/react-donut-chart/issues"
   },
   "eslint-plugin-jsx-a11y": "^6.2.3",
   "husky": {
