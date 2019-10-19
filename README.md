@@ -6,11 +6,13 @@ To use it simply install it via `npm`:
 
 `npm i --save react-donut-chart`
 
-## example url 
+## demo
 
 You can see this component in action [here](https://example.zilahir.now.sh/)
 
 ## props
+
+
 
 ## contribution
 

@@ -99,7 +99,7 @@ DonoutChart.defaultProps = {
 	circleColor: '#fff',
 	labelStyle: {},
 	percentage: 0,
-	textStyle: null,
+	textStyle: {},
 }
 
 DonoutChart.propTypes = {
