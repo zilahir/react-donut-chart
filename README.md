@@ -62,10 +62,16 @@ The rest of the `dom` will be suffixed with the `baseClass` prop's value.
 
 If you encountered an issue, or a bug, or want to request a feature, please use the [`issues`](https://github.com/zilahir/react-donut-chart/issues) section. 
 
+If you want to modify something yourself, feel free to fork this project, create a new branch for your feature, then send a `PR` and I will be happy to review and merge it. :wink:
+
 ## screenshots
+
+![screenshot](https://github.com/zilahir/react-donut-chart/blob/master/example/screenshot_1.png?raw=true)
 
 ## dependencies 
 
 This package depends on [`styled-components`](https://github.com/styled-components)
 
-## licence
+## Misc
+
+1) this package is licenced under [MIT](https://choosealicense.com/licenses/mit/)
