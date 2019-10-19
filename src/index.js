@@ -72,7 +72,7 @@ const DonoutChart = props => {
 				<ul>
 					<Indicator
 						color={colorOff}
-						className={`indicator off indicator--${baseClass}`}
+						className={`indicator off indicator-off--${baseClass}`}
 						style={{
 							...labelStyle.off,
 						}}
@@ -81,7 +81,7 @@ const DonoutChart = props => {
 					</Indicator>
 					<Indicator
 						color={colorOn}
-						className={`indicator on  indicator--${baseClass}`}
+						className={`indicator on  indicator-on--${baseClass}`}
 						style={{
 							...labelStyle.on,
 						}}
