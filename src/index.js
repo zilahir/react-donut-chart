@@ -40,7 +40,7 @@ const DonoutChart = props => {
 		baseClass,
 		circleColor,
 		textStyle,
-		labelStyle
+		labelStyle,
 	} = props
 
 	const deg = (percentage / 100) * 360
