@@ -10,7 +10,7 @@ To use it simply install it via `npm`:
 
 ## demo
 
-You can see this component in action [here](https://example.zilahir.now.sh/)
+You can see this component in action [here](https://example.zilahir.now.sh/).
 
 ## usage
 
@@ -90,10 +90,10 @@ The rest of the `dom` will be suffixed with the `baseClass` prop's value.
 
 | className        | extended                                                 |
 |------------------|----------------------------------------------------------|
-| `donutContainer` | `className={`donutContainer ${baseClass}`}`              |
-| `details`        | `className={`details details--${baseClass}`}`            |
-| `indicator off`  | `className={`indicator off indicator-off-${baseClass}`}` |
-| `indicator on`   | `className={`indicator on, indicator-on-${baseClass}`}`  |
+| `donutContainer` | ```className={`donutContainer ${baseClass}`}```              |
+| `details`        | ```className={`details details--${baseClass}`}```            |
+| `indicator off`  | ```className={`indicator off indicator-off-${baseClass}`}``` |
+| `indicator on`   | ```className={`indicator on, indicator-on-${baseClass}`}```  |
 
 
 ## contribution
