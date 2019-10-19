@@ -97,7 +97,7 @@ const DonoutChart = props => {
 DonoutChart.defaultProps = {
 	baseClass: '',
 	circleColor: '#fff',
-	labelStyle: null,
+	labelStyle: {},
 	percentage: 0,
 	textStyle: null,
 }
