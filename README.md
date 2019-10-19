@@ -6,7 +6,7 @@ This is a dead simple donut chart component implemented in `React`.
 
 To use it simply install it via `npm`: 
 
-`npm i --save react-donut-chart`
+`npm i --save simple-react-donut-chart`
 
 ## demo
 
