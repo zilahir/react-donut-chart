@@ -60,8 +60,12 @@ The rest of the `dom` will be suffixed with the `baseClass` prop's value.
 
 ## contribution
 
+If you encountered an issue, or a bug, or want to request a feature, please use the [`issues`](https://github.com/zilahir/react-donut-chart/issues) section. 
+
 ## screenshots
 
 ## dependencies 
+
+This package depends on [`styled-components`](https://github.com/styled-components)
 
 ## licence

@@ -1,6 +1,6 @@
 {
   "name": "simple-react-donut-chart",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Creates donut charts in react",
   "main": "build/index.js",
   "peerDependencies": {
