@@ -1,5 +1,5 @@
 {
-  "name": "react-donut-chart",
+  "name": "simple-react-donut-chart",
   "version": "0.0.1",
   "description": "Creates donut charts in react",
   "main": "build/index.js",
