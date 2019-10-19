@@ -1,6 +1,8 @@
 # React Donut Chart
 
-This is a dead simple donut chart component implemented in `React`. 
+This is a dead simple donut chart component implemented in `React`.
+
+![screenshot](https://github.com/zilahir/react-donut-chart/blob/master/example/screenshot_1.png?raw=true)
 
 To use it simply install it via `npm`: 
 
@@ -99,10 +101,6 @@ The rest of the `dom` will be suffixed with the `baseClass` prop's value.
 If you encountered an issue, or a bug, or want to request a feature, please use the [`issues`](https://github.com/zilahir/react-donut-chart/issues) section. 
 
 If you want to modify something yourself, feel free to fork this project, create a new branch for your feature, then send a `PR` and I will be happy to review and merge it. :wink:
-
-## screenshots
-
-![screenshot](https://github.com/zilahir/react-donut-chart/blob/master/example/screenshot_1.png?raw=true)
 
 ## dependencies 
 
