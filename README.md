@@ -95,6 +95,7 @@ The rest of the `dom` will be suffixed with the `baseClass` prop's value.
 | `indicator off`  | ```className={`indicator off indicator-off-${baseClass}`}``` |
 | `indicator on`   | ```className={`indicator on, indicator-on-${baseClass}`}```  |
 
+More might come later if there's a need.
 
 ## contribution
 
