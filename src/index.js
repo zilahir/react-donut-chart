@@ -43,7 +43,7 @@ const DonoutChart = props => {
 		labelStyle,
 	} = props
 
-	const deg = (percentage / 100) * 360
+	const deg = percentage > 50 ? ((percentage - 50) / 100) * 360 : (percentage / 100) * 360
 
 	return (
 		<div className={`donutContainer ${baseClass}`}>
