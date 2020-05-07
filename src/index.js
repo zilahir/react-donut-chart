@@ -18,15 +18,12 @@ const Indicator = styled.li`
 
 const Circle = styled.div`
 	background-color: ${props => props.colorStart};
-	background-image: linear-gradient(to right, ${props => props.colorStart} 0%, ${props => props.colorStart} 50%, ${props => props.colorEnd} 50%,${props => props.colorEnd} 100%);
+	background-image: linear-gradient(to right, ${props => props.colorStart} 0%, ${props => props.colorStart} 50%,${props => props.colorEnd} 50%,${props => props.colorEnd} 100%);
 	&:before {
 		content: '';
 		transform: rotate(${props => props.deg}deg);
-		background-color: inherit;
-	}
-	&:after {
-		background: ${props => props.circleColor};
-		content: '';
+		background-color: ${props => (props.percentage > 50 ? `${props.colorEnd}` : 'inherit')};
+		transition: all 2s ease;
 	}
 `
 
