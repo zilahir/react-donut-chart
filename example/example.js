@@ -36,10 +36,10 @@ const Example = () => (
 		/>
 
 		<DonoutChart
-			percentage={80}
+			percentage={60}
 			colorOn="#F5C342"
 			colorOff="#FFFF55"
-			labelOff="Him"
+			labelOff="lol"
 			labelOn="Her"
 			circleColor="#08010d"
 			textStyle={{

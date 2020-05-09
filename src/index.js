@@ -41,7 +41,6 @@ const DonoutChart = props => {
 	} = props
 
 	const deg = percentage > 50 ? ((percentage - 50) / 100) * 360 : (percentage / 100) * 360
-
 	return (
 		<div className={`donutContainer ${baseClass}`}>
 			<Circle
@@ -50,6 +49,7 @@ const DonoutChart = props => {
 				colorEnd={colorOff}
 				className="circle"
 				circleColor={circleColor}
+				percentage={percentage}
 			/>
 			<div className={`details details--${baseClass}`}>
 				<h2
@@ -64,7 +64,9 @@ const DonoutChart = props => {
 						...textStyle,
 					}}
 				>
-					25%
+					{
+						`${percentage}%`
+					}
 				</h1>
 				<ul>
 					<Indicator
