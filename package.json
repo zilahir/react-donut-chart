@@ -14,7 +14,7 @@
     "react-dom": "^16.10.2",
     "styled-components": "^4.4.0",
     "watchify": "^3.11.1",
-    "webpack": "^2.6.1"
+    "webpack": "^5.74.0"
   },
   "browserify": {
     "transform": [
